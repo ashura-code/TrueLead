@@ -8,6 +8,7 @@ interface ProductCardProps {
   likeness: number;
   price: number;
   Rlink: string;
+  
 }
 
 export default function Productcard(props: ProductCardProps) {
