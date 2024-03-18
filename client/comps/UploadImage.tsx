@@ -38,13 +38,13 @@ export default function UploadImage() {
 // ProductCardLink component
 const ProductCardLink: React.FC<{ product: ProductCardProps }> = ({ product }) => {
     const handleProductClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        e.preventDefault();
+        
         // Handle custom logic here
         console.log("Product clicked:", product.url);
     };
 
     return (
-        <Link  onClick={handleProductClick} href={`/trend?productUrl=${encodeURIComponent(product.url)}`} passHref>
+        <Link  onClick={handleProductClick} href={`/trends?productUrl=${encodeURIComponent(product.url)}`} passHref>
             
                 <Productcard
                     Plink={product.images[0]}
