@@ -42,7 +42,7 @@ export default function Productcard(props: ProductCardProps) {
           
         </div>
         <div className="flex flex-col items-start cursor-pointer mt-2" >
-            < a className="text-sm font-semibold text-white bg-black rounded p-2" href={Rlink} >Visit Product</a>
+            < a target='_blank'  className="text-sm font-semibold text-white bg-black rounded p-2" href={Rlink} >Visit Product</a>
           </div>
       </CardContent>
     </Card>
