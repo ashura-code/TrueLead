@@ -1,10 +1,10 @@
 import Image from 'next/image';
 import { Button } from '@/components/ui/button';
-
+import UploadImage from '@/comps/UploadImage'
 export default function Home() {
   return <div>
 
-     <Button>This is a test</Button>
+     <UploadImage/>
 
   </div>;
 }
