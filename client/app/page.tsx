@@ -5,12 +5,14 @@ import UploadImage from "@/comps/UploadImage";
 import UploadPhoto from "../components/component/upload-photo";
 export default function Home() {
   return (
-    <div className="w-[100vh]">
-      <section className="mx-10 my-6">
+    <div className="flex w-[100vh] flex-col items-center justify-center">
+      <section className="mx-auto my-6">
         <UploadPhoto />
       </section>
 
-      <UploadImage />
+      <div className="">
+        <UploadImage />
+      </div>
     </div>
   );
 }

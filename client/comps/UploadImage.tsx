@@ -24,7 +24,7 @@ export default function UploadImage() {
   return (
     <>
       <div
-        className="my-0 flex w-screen flex-wrap items-center justify-center"
+        className="my-0 flex w-screen flex-wrap items-center justify-center "
         style={{ flexWrap: "wrap" }}
       >
         {products.map((product: ProductCardProps, index) => (
