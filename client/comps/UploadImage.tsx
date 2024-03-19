@@ -38,7 +38,9 @@ export default function UploadImage() {
 // ProductCardLink component
 const ProductCardLink: React.FC<{ product: ProductCardProps }> = ({ product }) => {
     const handleProductClick = (e: React.MouseEvent<HTMLAnchorElement>) => {
-        
+        if (typeof window !== 'undefined') {
+            localStorage.setItem('currProduct', JSON.stringify(product.url));
+          }
         // Handle custom logic here
         console.log("Product clicked:", product.url);
     };
