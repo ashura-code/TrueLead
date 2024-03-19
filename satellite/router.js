@@ -7,7 +7,7 @@ router.get("/", (req, res) => {
   res.send("Hello");
 });
 
-router.get("/trends/:query", (req, res) => {
+router.post("/trends/:query", (req, res) => {
   const query = req.params.query;
   getTrendsData(query, (trendsData) => {
     res.json(trendsData);
